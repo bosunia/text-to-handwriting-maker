@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8315881117743932"
+     crossorigin="anonymous"></script>
+	  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z6PXSSRWG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-7Z6PXSSRWG');
+    </script>
+    <meta name="google-site-verification" content="FiZa25nAmxHD4KRgkGGShDdPsWpvQEEkHOf0PubrMA8" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic -->
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#09f" />
+    <meta name="description" content=" With the help of the text to handwriting maker tool, you can easily convert text into a handwritten style that looks just like your own! " />
+    <meta name="keywords" content="text to handwriting maker, text-to-handwriting converter, convert text to image, write assignment online" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content=" B.M Shifat" />
+    <meta name="copyright" content=" B.M Shifat" />
+    <meta name="robots" content="follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Text to Handwriting Maker" />
+    <meta property="og:url" content="https://hersit.com/" />
+    <meta property="og:description" content="with the help of the text to handwriting maker tool you can make easily convert text into a handwritten style that looks just like your own! " />
+    <meta property="og:site_name" content="Text to Handwriting Maker" />
+    <meta property="og:image:secure_url" itemprop="image" content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png" />
+    <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/saurabhdaware/image/upload/v1585413874/saurabh2019/projects/text-to-handwriting.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="337" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@bmshifat" />
+    <title>Text to Handwriting Maker</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <!-- PWA Migration -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <!-- Load Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Homemade+Apple|Roboto|Caveat|Liu+Jian+Mao+Cao&display=swap" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+
+    
+ </head>
+  <body>
+    <main>
+      <button aria-label="Activate Dark Mode" title="Toggle Dark Mode" aria-pressed="false" onclick="toggleTheme(this)" class="dark-mode-toggle">
+        <span class="sun">
+          <img alt="sun icon that represents light mode" width="35px" src="images/sun.svg" />
+        </span>
+        <span class="moon">
+          <img alt="moon icon to represent dark mode " width="25px" src="images/moon.svg" />
+        </span>
+      </button>
+      <h1>Text to Handwriting</h1>
+      <section class="generate-image-section">
+        <br />
+        <br />
+        <form id="generate-image-form">
+          <!-- Generate Image Section -->
+          <div class="display-flex output-grid responsive-flex">
+            <div class="flex-1 page-container-super">
+              <div>
+                <h2 style="margin-top: 0px;">Input</h2>
+                <label class="block" for="note">Type/Paste text here</label>
+              </div>
+              <div class="flex-1 page-container">
+                <div class="page-a margined lines">
+                  <div contenteditable="true" class="top-margin"></div>
+                  <div class="display-flex left-margin-and-content">
+                    <div contenteditable="true" class="left-margin"></div>
+                    <div class="paper-content" id="note" contenteditable="true">Hello, I am BM Shifat. Welcome To Our Website, Text To Handwriting Converter. Please Paste Your Text Into The Page, Select Your Best Handwriting, whatever you want, Change The Handwriting Size, and Then Click the Generate Image Button. Your Computer Text is Successfully Converted into Human Handwriting...........</div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <br />
+              </div>
+              <div>
+                <button id="draw-diagram-button" type="button" style="font-size: 0.9rem; margin-top: 5px;" class="draw-button"> Draw <small>(Beta)</small>
+                </button>
+              </div>
+            </div>
+            <div class="customization-col">
+              <!-- Handwriting Font -->
+              <div style="padding: 5px 0px 5px 0px;">
+                <b>Customizations</b>
+                <small>(Optional)</small>
+                <p style="font-size: 0.8rem;">
+                  <em>Note: Few changes may reflect only in the generated image and not in the preview</em>
+                </p>
+              </div>
+              <fieldset>
+                <legend>Handwriting Options</legend>
+                <div class="category-grid">
+                  <div>
+                    <label class="block" for="handwriting-font">Handwriting Font</label>
+                    <select id="handwriting-font">
+                      <option value="Bangla_Font">Bangla-1</option>
+                      <option value="Bangla-2">Bangla-2</option>
+                      <option value="English-1">English-1</option>
+                      <option value="English-2">English-2</option>
+                      <option value="English-3">English-3</option>
+                      <option value="English-4">English-4</option>
+                    </select>
+                  </div>
+                  <div class="upload-handwriting-container">
+                    <label class="block" for="font-file">Upload your handwriting font <small>(Beta)</small>&nbsp; <a style="font-size: 1.1rem;" title="How to add your own handwriting" href="#how-to-add-handwriting"> &#9432; </a>
+                    </label>
+                    <input accept=".ttf, .otf" type="file" id="font-file" />
+                  </div>
+                </div>
+              </fieldset>
+              <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
+              <fieldset>
+                <legend>Page & Text Options</legend>
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="font-size">Font Size</label>
+                    <input id="font-size" min="0" step="0.5" value="10" type="number" />
+                  </div>
+                  <div>
+                    <label class="block" for="ink-color">Ink Color</label>
+                    <select id="ink-color">
+                      <option default value="#000f55">Blue</option>
+                      <option value="black">Black</option>
+                      <option value="#ba3807">Red</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-size">Page Size</label>
+                    <select id="page-size">
+                      <option default value="a4">A4 &nbsp;</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="page-effects">Effects</label>
+                    <select id="page-effects">
+                      <option default value="shadows">Shadows</option>
+                      <option value="scanner">Scanner</option>
+                      <option value="no-effect">No Effect</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block" for="resolution">Resolution</label>
+                    <select id="resolution">
+                      <option value="0.8">Very Low</option>
+                      <option value="1">Low</option>
+                      <option selected value="2">Normal</option>
+                      <option value="3">High</option>
+                      <option value="4">Very High</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Spacing Options</legend>
+                <div class="category-grid">
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="top-padding">Vertical Position</label>
+                    <input id="top-padding" min="0" value="5" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="px">
+                    <label for="word-spacing">Word Spacing</label>
+                    <input id="word-spacing" min="0" max="100" value="0" type="number" />
+                  </div>
+                  <div class="postfix-input" data-postfix="pt">
+                    <label for="letter-spacing">Letter Spacing</label>
+                    <input id="letter-spacing" min="-5" max="40" value="0" type="number" />
+                  </div>
+                </div>
+              </fieldset>
+              <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
+              <fieldset>
+                <legend>Margin & Line Options</legend>
+                <div class="category-grid">
+                  <div>
+                    <label for="paper-margin-toggle">Paper Margin: <span aria-label="paper margin status" class="status">on</span>
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input aria-checked="true" checked aria-label="Paper Margin Button" id="paper-margin-toggle" type="checkbox" />
+                      <div></div>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="paper-line-toggle">Paper Lines: <span aria-label="paper line status" class="status">on</span>
+                    </label>
+                    <label class="switch-toggle outer">
+                      <input aria-checked="true" checked aria-label="Paper Line Button" id="paper-line-toggle" type="checkbox" />
+                      <div></div>
+                    </label>
+                  </div>
+                  <div class="experimental">
+                    <!-- Removed option -->
+                    <div class="upload-paper-container">
+                      <label class="block" for="paper-file">Upload Paper Image as Background</label>
+                      <input accept=".jpg, .jpeg, .png" type="file" id="paper-file" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <!-- GENERATE IMAGE BUTTONS -->
+              <hr style="
+                  border: 0.3px solid var(--elevation-background);
+                  width: 80%;
+                " />
+              <div style="text-align: center; padding: 30px 0px;">
+                <button type="submit" data-testid="generate-image-button" class="button generate-image-button"> Generate Image </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- OUTPUT -->
+      <section>
+        <h2 id="output-header">Output</h2>
+        <div id="output" class="output" style="text-align: center;"> Click "Generate Image" Button to generate new image. </div>
+        <div style="text-align: center; padding: 30px;">
+          <button class="imp-button" id="download-as-pdf-button"> Download All Images as PDF </button>
+          <button class="delete-button" id="delete-all-button"> Clear all images </button>
+        </div>
+      </section>
+      <section id="how-to-add-handwriting">
+
+        <h2><strong>What is Online Text to Handwriting Converter?</strong></h2>
+Today, people can express their thoughts and desires with the help of modern technology. One such technology is an online text to handwriting maker. This tool allows users to convert text to handwriting so that handwritten letters, cards, or other messages can be created with a more personal touch. The technology is convenient, easy to use, and free for all types of users.
+
+Text to Handwriting marker is an online converter preloaded with various fonts, typefaces, and signature styles. This technology allows text to be transformed into handwriting that resembles the handwriting of a real person. Users simply enter the desired text into their online converter, select the desired font and signature style, and the tool generates the handwritten version in seconds.
+
+The benefits of using the text to handwriting creator are numerous. First, users can create handwritten cards and letters at a fraction of the time and cost of handwriting. Additionally,  people can send personalized messages to their loved ones with little to no effort. Therefore, this technology can save users time and money.
+
+With the help of text to handwriting makers, people can create handwritten cards and letters for different occasions such as birthdays, holidays, anniversaries, celebrations, etc. Handwriting converter makes beautiful and personal with lasting effect notes can be made.
+
+Overall, an online text to handwriting maker is an efficient, accessible, and inexpensive way to create handwritten notes and maps. This tool allows users to instantly create personalized messages for special events.
+
+&nbsp;
+<h2><strong> Introduction to Text to Handwriting Technology: An Overview</strong></h2>
+The wide range of technologies used in modern computing is growing every day. Few of these technologies are more exciting than text to handwriting maker technology which allows users to create beautiful handwritten notes and documents in their own handwriting. This article provides an overview of this exciting technology and what it offers.
+
+Text to handwriting maker technology is growing in popularity and becoming more commonplace. It recognizes text input and converts it into a digital representation of a person's handwriting. This digital representation is printed like handwriting. A great way for users to create documents, cards, and letters with their own handwriting style.
+
+This technology works on a simple concept. It recognizes each letter and number in the initial text input and maps it to a human-like typeface. It is an efficient process that can handle various fonts and fonts from cursive.
+
+&nbsp;
+<h2><strong>Definition of text to handwriting technology</strong></h2>
+Text to handwriting maker technology is a revolutionary tool that will revolutionize the way people communicate. Text to Handwriting Makers allows individuals to send handwritten letters and notes to friends, family, and colleagues through digital media. This technology is growing in popularity because it eliminates the need for handwriting and eliminates a number of potential errors in physical shipping.
+
+Text to handwriting maker technology is essentially a digital platform that recreates handwritten script from the typed text. With Text to Handwriting Makers, users simply type in the desired text and it is recreated in a handwritten font to make it look like handwriting. This technique can be used for a variety of purposes, including handwritten thank you notes, letters, cards, and other personal messages.
+
+Best Handwriting Maker Text is easy to use and offers a variety of style and formatting options. Many offer the ability to create personalized notes, allowing users to add their own personality to the notes.
+
+&nbsp;
+<h2><strong>Popular text to handwriting tools</strong></h2>
+In recent years,  the use of digital communication means using the Internet has increased. This makes communication easier and takes less time for feedback, but it can make your messages less personal. Therefore, more and more users are looking for ways to send handwritten notes via email, SMS, or social media. Text to Handwriting Tools is the perfect answer.
+
+Text to Handwriting Maker is a term used for computer-generated fonts that mimic handwriting. It can be used to personalize your message with a touch of handwriting. The most popular text to handwriting maker tool on the market offers a variety of fonts to choose from to personalize your message. This allows users to add an emotional element to the messages they send.
+
+Text to handwriting maker  tools come in a variety of designs and styles. Some fonts resemble cursive, while others mimic the look of a fountain pen. Font designers create fonts that allow users to adjust line thickness, letter spacing, and margin size. This creates a unique and personal style.
+
+Additionally, most fonts also support different languages ​​and character sets to meet the language needs of different markets. There is a growing demand for fonts that support Asian, Cyrillic,  Middle Eastern character sets, and Latin.
+
+Text to handwriting maker tools are used by businesses, bloggers, writers, and more. They are used to personalize documents, website content, emails, and other digital messages. Handwritten messages are becoming more and more popular because they can make you feel special.
+
+In summary, the text to handwriting maker tools is a great way to personalize your messages and add that special touch. These tools are popular because they can mimic different handwriting styles and support different languages. They're a great way to add a personal touch to your digital communications and create an emotional connection with your readers.
+
+&nbsp;
+<h2><strong>Use Cases for text to handwriting tools Technology</strong></h2>
+As technology advances, so do text to handwriting makertools. These tools are designed to help users convert written text to handwrite. This is useful in a variety of scenarios, from creating signature cards to creating birthday cards. The use cases for text to  handwriting maker tool technology are vast and growing all the time.
+
+One use case for the Text to Handwriting tool is a handwritten signature card. As more businesses recognize digital signatures, those that still require physical signatures are increasingly turning to text to handwriting maker tools. This technology can transform the typed text into authentic-looking signatures. This eliminates the need for handwritten fonts and makes signing documents easier and more efficient.
+
+Another great use of the handwriting tool's text is to create personalized cards. Many users choose to make handmade cards instead of purchasing pre-printed cards. But if you have limited time, the text to handwriting conversion tool can easily fix it by converting your text to stylized handwriting. This allows users to personalize cards for their loved ones without spending time handwriting.
+
+The text to handwriting maker tool can also be used to create invitations and thank you cards. For example, an event coordinator may find it helpful to create a regular invitation using text to  handwriting maker technology. This eliminates the need to handwrite every message and instead allows you to quickly create invitations with custom handwriting that suits your needs.  Finally, text to  handwriting maker technology can be used by small businesses and entrepreneurs who want to sell their products. Many businesses are turning to text to handwriting tools to create custom messages across a variety of products, including B. Advertising flyers, postcards, and even business cards. This technology gives business owners the flexibility to customize their marketing materials while maintaining a professional look and feel.
+
+The text to  handwriting maker  tool His technology use cases are expanding as businesses and individuals become aware of the options available. From handwritten signatures to creating invitations and promotional materials, text to  handwriting maker  tools save time and allow users to create personalized messages without the hassle of handwriting. Due to its diverse applications, this technology is quickly becoming a popular option for businesses and everyday users.
+
+&nbsp;
+<h2><strong>How the text to handwriting makers can increase customer intimacy.</strong></h2>
+In today's digital age, businesses are looking for ways to differentiate themselves from their competitors and improve the customer experience. One way he does this is by harnessing the power of text to handwriting authors. Text to Handwriting Makers is a computer software program that converts regular text into natural-looking handwritten documents. By using this technology, businesses can get closer to their customers and develop a closer relationship with them.
+
+Using a text to handwriting maker for your customer interactions has several advantages. First, the documents produced by these applications are aesthetically pleasing. Handwriting is often seen as more personal, human, and friendly compared to printed text, and can give customers the impression that their response is appreciated. In addition, handwriting adds a personal touch to your documents and gives them a more professional look.
+
+Another her benefit of handwriting makers using text is that it enables companies to better understand their customers. By analyzing customer handwriting, businesses can gain valuable insight into customer preferences and habits. This can be used to customize customer relationships and provide the best possible service.
+
+Text to handwriting creator also allows businesses to offer unique experiences to their customers. You can customize your handwritten documents to include your customer's name, address, or other important information. This allows customers to receive their own unique document and helps build customer loyalty and trust.
+
+In today's modern world, businesses must realize the importance of being close to their customers. With the help of creators that convert text to handwriting, businesses can efficiently improve customer retention, build customer loyalty, and develop closer relationships with customers. By using this technology, businesses can offer their customers unforgettable experiences.
+
+<strong> </strong>
+<h2><strong>Benefits of using text to handwriting maker technology</strong></h2>
+In today's digital age, technological advances are dramatically changing the way we communicate. One such technology on the rise is the text to handwriting creator. This tool has grown in popularity as technology has advanced, and it can be beneficial to use it on various platforms.
+
+Text to Handwriting Maker uses a conversion engine to convert the entered text into the handwritten form. This technique, often called digital calligraphy,  is quickly becoming the preferred method for sending personal digital messages. Text to handwriting maker allows users to create handwritten items such as postcards, digital cards, and even handwritten letters.
+
+Using the text to  handwriting maker technology offers many potential advantages when sending handwritten messages. Handwritten elements, for example,  have a much more personal feel than simply typed messages. People tend to think of handwritten messages as more meaningful because it's clear that time and effort were put into crafting a unique and personal message. Additionally,text to  handwriting maker  conversion technology helps eliminate potential human errors and misunderstandings while providing the same personal touch. Along with a more personalized feel and improved accuracy, the text-to-maker handwriting technology is also easier to use. This technology is an easy-to-use tool that allows anyone to easily send handwritten messages. Just type your message and the conversion engine will convert it into a handwritten form.
+
+As text to  handwriting maker technology continues to grow in popularity, users should remember that this technology should not replace physical writing. With this in mind, Text to Handwriting Creator can help users quickly create personalized messages without manually writing them. Overall, the text is becoming more and more useful for handwriting writers in today's digital age. These tools add a more personal touch, precision, and convenience to your written messages. These potential benefits enable text to handwriting creator users to create meaningful and personal messages in no time.
+
+&nbsp;
+<h2><strong>How to use Online Text to Handwriting Converter?</strong></h2>
+It’s becoming increasingly common to correspond through text, whether it’s in the form of an email, a text message, or a social media post. But for many of us, nothing quite beats receiving a handwritten letter. If you’d like to experience the charm of a handwritten letter without spending hours writing it, there is help: text to handwriting makers.
+
+A text to handwriting maker is an online tool that converts plain text into a bespoke handwritten version, which you can then print or send to the recipient. Here’s how to use a text to handwriting maker:
+
+Step 1: Choose Your Application
+
+There is a range of text to handwriting makers freely available online. Take some time to research the different applications to ensure they can meet your needs.
+
+Step 2: Input Your Text
+
+Once you’ve settled on a text to handwriting maker, simply input the text that you’d like to convert into handwriting. Some applications allow for text to be input directly, while others require you to type or paste in a file.
+
+Step 3: Select Your Handwriting Style
+
+Most text to handwriting makers offers a range of handwriting options that you can select from, depending on your desired look and feel. Make sure to take your time in selecting the right handwriting style for your letter.
+
+Step 4: Add Special Touches
+
+If you want to give your letter an even more personal touch, some text to handwriting makers offer special touches such as clipart, stickers, and images; some even have features for adding wax seals or letter embellishments.
+
+Step 5: Print or Send
+
+Once you’re happy with the design and contents of your (hopefully) soon-to-be iconic handwritten letter, you can print it or send it electronically. Congratulations - your recipient will cherish the letter!
+
+Whether you’re a small business or an individual, a text to handwriting maker can be a great way of adding charm and character to your letters. So why not give it a try?
+
+        <h2>🤓 Guide to add your own handwriting</h2>
+        <div>
+          <ul>
+            <li> To use your handwriting, you will have to generate font of your handwriting. </li>
+            <li> There are websites like <a target="_blank" rel="noopener noreferrer" href="https://www.calligraphr.com/en/">Calligraphr</a> that let you do that. </li>
+            <li> Once you get .ttf file of your handwriting, upload it from 'Upload your handwriting font' button in customizations sections </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+
+<!--     Ads -->
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Big Offer Only For You</h1>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+<!-- <p style="font-size: 30px;">Try Our All In One Free Ai Tools. You can generate content, image, code, and use other 70+ ai tool for free at one place </p> -->
+		   <img src="https://ads.herosit.com/1.webp" id="ads" width="100%">
+                <a href="https://aiwriterbd.herosit.com/"><button style="margin-top:10px; padding-left: 41%; padding-right: 43%; padding-top: 4%; padding-bottom: 4%;" type="button" class="btn btn-danger"> Start Now</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--     Ads -->
+    
+    <footer style="padding: 40px 0px 10px 0px;"> ~ Made ( <a href="https://herosit.com">https://herosit.com</a>) </footer>
+    <!-- Fixed Elements -->
+    <section class="draw-container popup-container">
+      <button class="close-button">&times;</button>
+      <div class="display-flex responsive-flex">
+        <canvas id="diagram-canvas" style="background-color: #fff;" height="300px" width="600px"></canvas>
+        <div class="flex-1 buttons-container padding-around">
+          <button id="add-to-paper-button" style="margin-top: 5px; margin-bottom: 5px;"> Add to Paper </button>
+          <button id="draw-download-button" style="margin-top: 5px; margin-bottom: 5px;"> Download Image </button>
+          <br />
+          <br />
+          <input type="file" id="image-to-add-in-canvas" accept="image/x-png,image/jpeg" hidden="hidden" />
+          <br />
+          <br />
+          <button id="add-new-image-button">Add bg image</button>
+          <br />
+          <br />
+          <button id="clear-draw-canvas" class="blue-button" style="background-color: #f30; color: #fff;"> Clear Canvas </button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/vendors/html2canvas.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="js/app.mjs"></script>
+    <script defer src="https://unpkg.com/jspdf@^1/dist/jspdf.min.js"></script>
+    <script>
+      function toggleTheme(toggleButton) {
+        if (document.body.classList.contains('dark')) {
+          document.body.classList.add('fade-in-light');
+          document.body.classList.remove('dark');
+          document.body.classList.remove('fade-in-dark');
+          window.localStorage.setItem('prefers-theme', 'light');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', false);
+            toggleButton.setAttribute('aria-label', 'Activate Dark Mode');
+          }
+        } else {
+          document.body.classList.add('fade-in-dark');
+          document.body.classList.add('dark');
+          document.body.classList.remove('fade-in-light');
+          window.localStorage.setItem('prefers-theme', 'dark');
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', true);
+            toggleButton.setAttribute('aria-label', 'Activate Light Mode');
+          }
+        }
+      }
+      const localPreference = window.localStorage.getItem('prefers-theme');
+      if (localPreference) {
+        if (localPreference === 'light') document.body.classList.remove('dark');
+        else document.body.classList.add('dark');
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+      }
+      document.querySelectorAll('#donations a[href]').forEach((anchorEl) => {
+        anchorEl.addEventListener('click', (e) => {
+          const tracker = ga.getAll()[0];
+          let label;
+          if (e.target.href) {
+            label = e.target.href;
+          } else {
+            label = e.target.parentElement.href;
+          }
+          if (tracker) {
+            tracker.send('event', 'Donation Link', 'Click', label);
+          }
+        });
+      });
+    </script>
+   </body>
+</html>
